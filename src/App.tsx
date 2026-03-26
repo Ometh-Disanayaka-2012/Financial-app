@@ -26,7 +26,7 @@ const analyze = async () => {
   setResult(null);
 
   // Use the new Gemini 3 Flash model name
-  const API_KEY = "AIzaSyA1S2w9ibZWP38zhQfjbpYThfWfEjhdJwU"; 
+  const API_KEY = "AIzaSyDumLLtz75ng73nMHvxHYFBsoaQM68TiZQ"; 
   const URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${API_KEY}`;
 
   const promptText = `
