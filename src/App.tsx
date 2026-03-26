@@ -25,8 +25,9 @@ const analyze = async () => {
   setError(null);
   setResult(null);
 
+  const API_KEY = import.meta.env.VITE_ANTHROPIC_API_KEY;
+  console.log("Key loaded:", import.meta.env.VITE_ANTHROPIC_API_KEY);
   // Use the new Gemini 3 Flash model name
-  const API_KEY = "AIzaSyDumLLtz75ng73nMHvxHYFBsoaQM68TiZQ"; 
   const URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${API_KEY}`;
 
   const promptText = `
